@@ -1,0 +1,11 @@
+<div layout="column" layout-fill>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2 flex class="cursor-pointer" ui-sref="catalog">KPN Shop</h2>
+      <md-button ui-sref="cart" class="md-raised">
+        <md-icon md-svg-src='assets/ic_shopping_cart_black_24px.svg'></md-icon>
+        Cart ({{$ctrl.cartItemsLength}})
+      </md-button>
+
+    </div>
+  </md-toolbar>

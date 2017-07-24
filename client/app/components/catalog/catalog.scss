@@ -1,0 +1,93 @@
+.catalog {
+  color: blue;
+}
+
+.app-product:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+	@-webkit-keyframes placeHolderShimmer {
+	  0% {
+	    background-position: -468px 0
+	  }
+	  100% {
+	    background-position: 468px 0
+	  }
+	}
+	
+	@keyframes placeHolderShimmer {
+	  0% {
+	    background-position: -468px 0
+	  }
+	  100% {
+	    background-position: 468px 0
+	  }
+	}
+
+	.timeline-item {
+	  background: #fff;
+	  border: 1px solid;
+	  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	  border-radius: 3px;
+	  padding: 12px;
+	  margin: 0 auto;
+	  max-width: 350px;
+	  min-height: 400px;
+    margin-top:5px;
+	}
+	
+	.animated-background {
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  -webkit-animation-fill-mode: forwards;
+	  animation-fill-mode: forwards;
+	  -webkit-animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
+	  -webkit-animation-name: placeHolderShimmer;
+	  animation-name: placeHolderShimmer;
+	  -webkit-animation-timing-function: linear;
+	  animation-timing-function: linear;
+	  background: #f6f7f8;
+	  background: #eeeeee;
+	  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+	  background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+	  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+	  -webkit-background-size: 800px 104px;
+	  background-size: 800px 104px;
+	  height: 237px;
+		width: 100%;
+	  position: relative;
+	}
+	
+	.background-masker {
+	  background: #fff;
+	  position: absolute;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	}
+	
+	.outlined .background-masker {
+	  border: 1px solid #ddd;
+	}
+	
+	.outlined:hover .background-masker {
+	  border: none;
+	}
+	
+	.outlined:hover .background-masker:hover {
+	  border: 1px solid #ccc;
+	  z-index: 1;
+	}
+
+	.background-masker.content-top {
+	  bottom: 40px;
+	  left: 0;
+	  right: 0;
+	  height: 6px;
+	}
+	
+	.background-masker.content-top {
+	  height: 10px;
+	}
+	

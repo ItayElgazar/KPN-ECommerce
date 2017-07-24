@@ -1,0 +1,38 @@
+.product {
+  color: red;
+}
+
+
+.product-page {
+  padding: 75px;
+}
+
+.product-wrapper {
+  padding: 65px;
+}
+
+.product-info {
+  width:100%;
+  background-color:#f8f8f8;
+}
+
+.picker-box {
+  border: 2px solid #d8d8d8;
+  height: 30px;
+  padding:3px;
+  border-radius:3px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.picker-box:hover {
+  border:2px solid blue;
+}
+
+.picker-box:focus {
+  outline:0;
+}
+
+.active {
+  border: 3px solid green;
+}

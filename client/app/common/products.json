@@ -1,0 +1,74 @@
+{
+"currency": "EURO",
+"products":
+[
+    {
+        "id": 1,
+        "name": "Samsung Galaxy S7 Sim Free",
+        "image": "http://files-ptdpritol.netdna-ssl.com/system/photos/1148165/large/78920f627a06eb82911534a8763cf3ba.jpg",
+        "price": 82,
+        "manufacturer": "Samsung",
+        "customizations": {
+            "storage": [32,64,128],
+            "color": ["black","white","gray","red"]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Iphone 7 Sim Free",
+        "image": "https://files-ptdpritol.netdna-ssl.com/system/photos/1575009/original/5c10ffd9be28f9e9cc86f79c6d3ded30.jpg",
+        "price": 62,
+        "manufacturer": "Apple",
+        "storages": [32,64,128],
+        "customizations": {
+            "storage": [32,64,128],
+            "color": ["black","white","gray","red"]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Samsung Galaxy Note 5",
+        "image": "https://files-ptdpritol.netdna-ssl.com/system/photos/828113/original/be44eed95559c38efab45a1183be7a4f.jpg",
+        "price": 62,
+        "manufacturer": "Samsung",
+        "customizations": {
+            "storage": [32,64,128],
+            "color": ["black","white","gray","red"]
+        }
+    },
+    {
+        "id": 4,
+        "name": "One Plus 3",
+        "image": "https://files-ptdpritol.netdna-ssl.com/system/photos/1374145/original/68bd795ed4bff896ca97bcc94c9eb337.jpg",
+        "price": 51,
+        "manufacturer": "Apple",
+        "customizations": {
+            "storage": [32,64,128],
+            "color": ["black","white","gray","red"]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Samsung Galaxy J5",
+        "image": " https://files-ptdpritol.netdna-ssl.com/system/photos/1468127/original/c2f728b81d165b6cc5219032787691e7.jpg",
+        "price": 60,
+        "manufacturer": "Apple",
+        "customizations": {
+            "storage": [32,64,128],
+            "color": ["black","white","gray","red"]
+        }
+    },
+    {
+        "id": 6,
+        "name": "Samsung Galaxy J5",
+        "image": " https://files-ptdpritol.netdna-ssl.com/system/photos/1468127/original/c2f728b81d165b6cc5219032787691e7.jpg",
+        "price": 50,
+        "manufacturer": "Apple",
+        "customizations": {
+            "storage": [32,64,128],
+            "color": ["black","white","gray","red"]
+        }
+    }
+
+]
+}

@@ -1,0 +1,69 @@
+@import "common/common";
+
+.app {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-wrapper {
+  margin: auto;
+  margin-top:15px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.sm-text {
+  font-size:12px;
+  color: gray;
+}
+
+.sm {
+  width: 15px;
+}
+
+.md {
+  width: 30px;
+}
+
+.lg {
+  width: 50px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,12 @@
+
+      <p class="md-subhead">Available {{$ctrl.type}}s:</p>
+      <span class="error" ng-if="$ctrl.type === 'color' && $ctrl.colorError">Please choose color</span>
+      <span class="error" ng-if="$ctrl.type === 'storage' && $ctrl.storageError">Please choose storage</span>
+      <div class="flex">
+        <div ng-repeat="option in $ctrl.options" ng-click="$ctrl.onselect({opt: option}); $ctrl.option = option;"
+      
+         ng-class="{active: $ctrl.option == option, md: $ctrl.type == 'color',
+        {{option}}: $ctrl.type == 'color' }" 
+        
+         class="picker-box"><span ng-if="$ctrl.type == 'storage'">{{option}} GB</span></div>
+      </div>

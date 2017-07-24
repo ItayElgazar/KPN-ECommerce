@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+<md-card ng-if="!$ctrl.purchase.purchaseStatus">
+     <md-card-content>
+        <h2>Please fill up the details</h2>
+      
+        <hr>
+        <md-input-container class="md-block">
+        <label>Full name</label>
+        <input required md-no-asterisk name="description" ng-model="$ctrl.purchase.fullName">
+      </md-input-container>
+
+      <p>Total Price: {{$ctrl.purchase.totalPrice}}</p>
+      </md-card-content>
+
+      <md-button-actions layout="row" layout-align="center">
+      <md-button class="md-raised md-primary" ng-click="$ctrl.payNow()">
+        Pay now
+      </md-button>
+      </md-button-actions>
+</md-card>
+
+<md-card ng-if="$ctrl.purchase.purchaseStatus">
+     <md-card-content>
+        <h2>Thank you for purchasing on KPN.</h2>
+      
+        <hr>
+        <p>Dear, {{$ctrl.purchase.fullName}}, <br /> Thank you for your purchasing. </p>
+      </md-card-content>
+     
+    
+      </md-button-actions>
+</md-card>
+
+
+  </div>
+</div>

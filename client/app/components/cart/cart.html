@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <md-card>
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Shopping Cart</span>
+          <span class="md-subhead">({{$ctrl.cartItems.length}}) items</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <table ng-if="$ctrl.cartItems.length" class="table text-center">
+          <th class="text-center">#</th>
+          <th class="text-center">Product Name</th>
+          <th class="text-center">Product Price</th>
+          <th></th>
+          <tr class="text-center" ng-repeat="product in $ctrl.cartItems">
+            <td><img ng-src="{{product.image}}" height="40" width="30" /></td>
+            <td>{{product.name}} <br /> <span class="sm-text">Color: {{product.color}}, Storage: {{product.storage}} GB</span></td>
+            <td>{{product.price}} {{$ctrl.currency}}</td>
+            <td>
+              <md-menu md-offset="0 -5">
+                <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$ctrl.openMenu($mdMenu, $event)">
+                  <md-icon md-svg-src='assets/ic_more_vert_black_24px.svg'></md-icon>
+                </md-button>
+                <md-menu-content width="2">
+                  <md-menu-item>
+                    <md-button ng-click="$ctrl.deleteItemFromCart(product.id)">Delete</md-button>
+                  </md-menu-item>
+                </md-menu-content>
+              </md-menu>
+
+            </td>
+          </tr>
+        </table>
+        <span class="md-subhead" ng-if="$ctrl.cartItems.length">Total Price: {{$ctrl.totalPrice}} {{$ctrl.currency}}</span>
+        <p class="md-headline text-center" ng-if="$ctrl.cartItems.length == 0">Your cart is empty</p>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-if="$ctrl.cartItems.length" ui-sref="checkout" class="md-raised md-primary">prrocced to checkout</md-button>
+        </md-card-actions>
+        <div layout="row" layour-align="end center">
+        <md-button ng-if="$ctrl.cartItems.length" ng-click="$ctrl.clearCartItems();" class="md-raised">Clear Cart</md-button>
+         <md-button ng-if="$ctrl.cartItems.length" ui-sref="catalog" class="md-raised md-warn">Continue shopping</md-button>
+         </div>
+        <md-button ng-if="$ctrl.cartItems.length == 0" ui-sref="catalog" class="md-raised">Back</md-button>
+
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
